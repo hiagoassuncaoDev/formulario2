@@ -14,6 +14,7 @@
     font-size: 3.5em;
     font-weight: 400;
     color: #5F49F2;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.683);
     text-align: center;
     margin-top: 30px;
 }
