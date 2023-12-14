@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro</title>
+</head>
+<body>
+    <div>
+        <h1 id="titulo">Concorra a um iPhone 15!</h1>
+        <p id="subtitulo">Preencha os dados, envie e você estará concorrendo.</p>
+    </div>
+
+    <form>
+        <fieldset>
+            <!--Nome-->
+            <div class="dados-pessoais">
+                <label for="nome"><strong>Nome</strong></label>
+                <input type="text" name="nome" id="nome" required placeholder=" Insira seu nome">
+            </div>
+            <!--Telefone-->
+            <div class="dados-pessoais">
+                <label for="telefone"><strong>Telefone</strong></label>
+                <input type="tel" name="telefone" id="telefone" required placeholder=" Insira seu número">
+            </div>
+            <!--Whatsapp radio-->
+            <div class="dados-pessoais">
+                <label for="whatsapp"><strong>Esse número é Whatsapp?</strong></label>
+                <label>
+                    <input type="radio" name="whatsapp" id="whatsapp" checked> Sim
+                </label>
+                <label>
+                    <input type="radio" name="whatsapp" id="whatsapp"> Não
+                </label>
+            </div>
+            <!--Gênero radio-->
+            <div class="dados-pessoais">
+                <label for="sexo"><strong>Gênero</strong></label>
+                <select name="sexo" id="sexo">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Feminino</option>
+                    <option>Masculino</option>
+                    <option>Não-binário</option>
+                </select>
+            </div>
+            <!--Endereço-->
+            <div class="dados-pessoais">
+                <label for="endereco"><strong>Endereço</strong></label>
+                <label>
+                    <input type="text" name="endereco" id="endereco" required placeholder=" Insira seu endereço">
+                </label>
+            </div>
+        </fieldset>
+
+        <!--Novo Campo-->
+        <fieldset>
+            <!--data da compra-->
+            <div class="compra">
+                <label for="data"><strong>Data da compra</strong></label>
+                <label>
+                    <input type="date" name="data" id="data" required>
+                </label>
+            </div>
+            <!--Local da compra-->
+            <div class="compra">
+                <label for="local-da-compra"><strong>Em qual das nossas lojas você comprou?</strong></label>
+                <select name="local-da-compra" id="local-da-compra">
+                    <option selected disabled value="">Selecione</option>
+                    <option>Salvador</option>
+                    <option>Lauro de Freitas</option>
+                    <option>Feira de Santana</option>
+                    <option>Camaçari</option>
+                    <option>Dias D'Avila</option>
+                </select>
+            </div>
+            <!--Nota fiscal-->
+            <div class="compra">
+                <label for="nota"><strong>Número do cupom</strong></label>
+                <input type="text" name="nota" id="nota" required placeholder=" Insira o número">
+            </div>
+            <!--Campo-->
+            <div class="compra">
+                <br>
+                <label><strong>Por que você merece ganhar um iPhone 15?</strong></label>
+                <br>
+                <textarea name="txt" id="txt" rows="10" style="width: 26em;" required placeholder=" A melhor resposta será a escolhida!"></textarea>
+            </div>
+        </fieldset>
+        <!--Botão-->
+        <div class="button">
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>
